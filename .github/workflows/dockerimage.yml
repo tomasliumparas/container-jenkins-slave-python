@@ -16,7 +16,7 @@ jobs:
         USERNAME: ${{ secrets.GITHUB_USERNAME }}
         PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         REGISTRY: "docker.pkg.github.com"
-        BUILD_PATH: "3.6/Dockerfile"
+        BUILD_PATH: "3.6"
         IMAGE_NAME: "tomasliumparas/jenkins-slave-python"
         TAG_NAME: "v0.0.1"
         LATEST: "true"
