@@ -14,7 +14,7 @@ jobs:
       uses: opspresso/action-docker@master
       env:
         USERNAME: ${{ secrets.GITHUB_USERNAME }}
-        PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        PASSWORD: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
         REGISTRY: "docker.pkg.github.com"
         BUILD_PATH: "3.6"
         IMAGE_NAME: "tomasliumparas/jenkins-slave-python"
