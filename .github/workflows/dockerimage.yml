@@ -17,4 +17,4 @@ jobs:
         username: ${{ secrets.GITHUB_USERNAME }}
         password: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
         registry: docker.pkg.github.com
-        workidr: "3.6"
+        dockerfile: "3.6/Dockerfile"
