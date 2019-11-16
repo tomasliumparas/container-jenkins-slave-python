@@ -13,7 +13,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: tomasliumparas/container-jenkins-slave-python
+        name: tomasliumparas/container-jenkins-slave-python/jenkins-slave-python36
         username: ${{ secrets.GITHUB_USERNAME }}
         password: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
         registry: docker.pkg.github.com
