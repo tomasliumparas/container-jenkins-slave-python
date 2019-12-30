@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Publish to Registry
+    - name: Publish to Github registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: tomasliumparas/container-jenkins-slave-python/jenkins-slave-python36
@@ -15,3 +15,10 @@ jobs:
         password: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
         registry: docker.pkg.github.com
         dockerfile: "3.6/Dockerfile"
+    - name: Publish to DockerHub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: getais/jenkins-slave-python36
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        dockerfile: "3.6/Dockerfile":  
