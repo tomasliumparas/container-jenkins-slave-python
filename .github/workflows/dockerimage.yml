@@ -21,4 +21,4 @@ jobs:
         name: getais/jenkins-slave-python36
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        dockerfile: "3.6/Dockerfile":  
+        dockerfile: "3.6/Dockerfile"
