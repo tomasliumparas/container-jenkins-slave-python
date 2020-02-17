@@ -35,4 +35,5 @@ RUN source scl_source enable rh-python36 && \
     chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
 
-USER 1001
+# USER 1001
+USER 0
