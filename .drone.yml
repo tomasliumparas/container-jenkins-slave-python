@@ -1,0 +1,15 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+
+- name: Docker image
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: DOCKER_USER
+    password:
+      from_secret: DOCKER_TOKEN
+    repo: getais/jenkins-slave-python36
+    tags: latest
