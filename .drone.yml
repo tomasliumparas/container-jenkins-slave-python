@@ -11,5 +11,6 @@ steps:
       from_secret: DOCKER_USER
     password:
       from_secret: DOCKER_TOKEN
+    context: 3.6
     repo: getais/jenkins-slave-python36
     tags: latest
